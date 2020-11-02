@@ -1,20 +1,8 @@
 $(".header-right > a").click(function () {
-  $(".hamburger-menu").show();
+  $(".hamburger-menu").addClass("active");
 });
 
 $(".close").click(function () {
-  $(".hamburger-menu").hide();
+  $(".hamburger-menu").removeClass("active");
 });
 
-
-
-
-function checkWidth() {
-  setInterval(function () {
-    if ($(window).width() > 1000) {
-      $(".hamburger-menu").hide();
-    }
-  }, 1);
-}
-
-checkWidth();
